@@ -49,6 +49,12 @@
     color: #4b4b4b;
     font-size:13px;
   }
+
+  .outer-container img{
+    width:350px;
+    height:200px;
+  }  
+
 .outer-container {
   margin-left: 12.5vw;
   margin-right: 12.5vw;
