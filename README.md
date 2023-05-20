@@ -1,15 +1,17 @@
 # MechanicMate
 
+The video link for MechanicMate - https://drive.google.com/file/d/1WfZ1CDgcTwZAy2DVvJssVAZsmdtS-YZj/view?usp=sharing
+
 <h1>MechanicMate</h1>
 Welcome to the MechanicMate project! MechanicMate is a web-based platform that aims to revolutionize the automotive industry by providing a comprehensive solution for vehicle owners to efficiently address their maintenance and repair needs.
 
 <h2>Project Overview:</h2>
 MechanicMate is built to offer a seamless automotive experience by leveraging advanced technologies. Our system incorporates damage detection algorithms to assess the severity of vehicle damages accurately. Based on the analysis, it recommends nearby mechanics who can provide the necessary repairs.
 <h2>Model Working:</h2> 
-Damage Detection: An intelligent module that uses algorithms to detect and evaluate vehicle damages, enabling users to understand the extent of the issues.
-Recommendation System: A recommendation engine that suggests trusted nearby mechanics based on the detected damages and their expertise, ensuring users find reliable repair services conveniently.
-Connection Module: This module enables users to directly connect with recommended mechanics, streamlining the process of scheduling appointments and discussing service requirements.
-User Interface: A user-friendly website interface that allows users to interact with the system seamlessly, providing an intuitive experience to access services, view recommendations, and manage appointments.
+<strong>Damage Detection:</strong> An intelligent module that uses algorithms to detect and evaluate vehicle damages, enabling users to understand the extent of the issues.
+<strong>Recommendation System: </strong>A recommendation engine that suggests trusted nearby mechanics based on the detected damages and their expertise, ensuring users find reliable repair services conveniently.
+<strong>Connection Module: </strong>This module enables users to directly connect with recommended mechanics, streamlining the process of scheduling appointments and discussing service requirements.
+<strong>User Interface: </strong>A user-friendly website interface that allows users to interact with the system seamlessly, providing an intuitive experience to access services, view recommendations, and manage appointments.
 <h2>Tech Stack :</h2> 
 HTML 
 CSS 
@@ -35,7 +37,7 @@ Access the MechanicMate website through your preferred web browser.
 <h2>Dataset :</h2> 
 https://github.com/ishpreetkaurkhalsa/MechanicMate/tree/main/Training%20Data
 
-Damage Detection
+<h2>Damage Detection</h2>
 The Damage Detection component of MechanicMate plays a crucial role in assessing the severity of vehicle damages. It utilizes advanced algorithms to analyze various factors, such as images or descriptions provided by the user, to accurately evaluate the extent of the damage.
 How It Works
 Input: Users can upload images or provide descriptions of the vehicle damages through the MechanicMate website.
