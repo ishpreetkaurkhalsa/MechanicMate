@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <meta charset="UTF-8">
     <title>MechanicMate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- custom stylesheets and libraries -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-margin-padding.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script type="text/javascript">
       i = 0;
       quotes = new Array();
@@ -37,21 +46,21 @@
 
       function print_i() {
         document.write(
-          "<p style='background-color: #ffb6c1;text-align:center'>\""
+          "<p style='text-align:center'>\""
         );
         document.write(quotes[i]);
       }
 
       function print_next() {
         document.write(
-          "<p style='background-color: #ffb6c1;text-align:center'>\""
+          "<p style='text-align:center'>\""
         );
         document.write(quotes[i]);
       }
 
       function print_for() {
         document.write(
-          "<p style='background-color: #ffb6c1;text-align:center'>\""
+          "<p style='text-align:center'>\""
         );
         document.write(quotes[i]);
       }
@@ -137,6 +146,46 @@
     ></script>
   </head>
   <body onload="circle()">
+
+    <header class="header-style-two">
+      <div class="header-top">
+          <div class="auto-container clearfix">
+
+                  
+              <div class="logo">
+                  <a href="index.html"><img src="img/resources/logo.jpg" alt="Car Door">
+                  </a>
+              </div>
+                  <div class="outer-box clearfix">
+                      <div class="btn-box">
+                      </div>
+                      <nav class="main-menu">
+                          <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                              </button>
+                          </div>
+                          <div class="navbar-collapse collapse clearfix">
+                              <ul class="navigation">
+                                  <li><a href="index.html">Home</a></li>
+                                  <li><a href="about.html">About</a></li>
+                                  <li>
+                                     
+                                      <a href="services.html">Services</a>
+                                  </li>
+                                  <li><a href="contact.html">Contact Us</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
     <div>
       <div
         class="d-flex flex-row justify-content-center outer-container shadow"
@@ -156,14 +205,14 @@
             <script>
               print_i();
             </script>
-          </p>
-          <a href="https://goo.gl/maps/EkxS6NZEi1nmJtNv9"> View Details </a>
+          </p><br>
+          <a href="https://goo.gl/maps/EkxS6NZEi1nmJtNv9" id="custom-button"> View Details </a>
         </div>
 
         <div class="display-progress">
           <div
             class="outer-circle d-flex flex-row justify-content-center"
-            style="background-image: conic-gradient(#34c6eb 80%, #ffcdb2 0)"
+            style="background-image: conic-gradient(#ae2b2b 80%, #0a3859 0)"
             id="c1"
           >
             <div class="inner-circle d-flex flex-column justify-content-center">
@@ -191,14 +240,14 @@
             <script>
               print_next();
             </script>
-          </p>
-          <a href="https://goo.gl/maps/TxHbcXeBh8t2r6qX8"> View Details </a>
+          </p><br>
+          <a href="https://goo.gl/maps/TxHbcXeBh8t2r6qX8" id="custom-button"> View Details </a>
         </div>
 
         <div class="display-progress">
           <div
             class="outer-circle d-flex flex-row justify-content-center"
-            style="background-image: conic-gradient(#34c6eb 70%, #ffcdb2 0)"
+            style="background-image: conic-gradient(#ae2b2b 70%, #0a3859 0)"
             id="c2"
           >
             <div class="inner-circle d-flex flex-column justify-content-center">
@@ -226,14 +275,14 @@
             <script>
               print_for();
             </script>
-          </p>
-          <a href="https://goo.gl/maps/nGCc7zS31rLa5pLQA"> View Details </a>
+          </p><br>
+          <a href="https://goo.gl/maps/nGCc7zS31rLa5pLQA" id="custom-button"> View Details </a>
         </div>
 
         <div class="display-progress">
           <div
             class="outer-circle d-flex flex-row justify-content-center"
-            style="background-image: conic-gradient(#34c6eb 75%, #ffcdb2 0)"
+            style="background-image: conic-gradient(#ae2b2b 75%, #0a3859 0)"
             id="c3"
           >
             <div class="inner-circle d-flex flex-column justify-content-center">
