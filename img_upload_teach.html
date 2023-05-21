@@ -35,9 +35,6 @@
       sources = new Array();
 
       function getQuote() {
-        // Create the arrays
-
-        // Initialize the arrays with quotes
         quotes[0] =
           "Vijaya mechanical works ( Vijaya auto service), #40-17-3/4, City centralcolony, Prasanth hosputak road, Bunder Rd, Labbipet,Vijayawada, Andhra Pradesh 520010";
         sources[0] = "Vijaya mechanical works";
@@ -50,16 +47,9 @@
           " VYSETTY RAM SEKHAR CAR A.C MECHANIC, Jamadagni street Ashok Nagar,opposite Ravindra bharati School road,Vijayawada.";
         sources[2] = "Vysetty Ram Sekhar Car Mechanic";
 
-        // Get a random index into the arrays
         i = Math.floor(Math.random() * quotes.length);
-
-        // Write out the quote as HTML
         document.write("<em>- " + sources[i] + "</em>");
 
-        // document.getElementById("content-data").innerHTML = quotes[i];
-        // document.getElementsByClassName("heading-projects").innerHTML =
-        //   sources[i];
-        // document.getElementsByClassName("project-image").src = lid[i];
       }
 
       function print_i() {
@@ -97,23 +87,11 @@
         quotes[2] =
           "K.G.N Motors, # 56-11-20, Ganapathi Sachidananda, Ashramam Rd, Patamata, Benz Circle, Vijayawada, Andhra Pradesh 520010";
         sources[2] = "K.G.N Motors";
-
-        // Get a random index into the arrays
         i = Math.floor(Math.random() * quotes.length);
-
-        // Write out the quote as HTML
         document.write("<em>- " + sources[i] + "</em>");
-
-        // document.getElementById("content-data").innerHTML = quotes[i];
-        // document.getElementsByClassName("heading-projects").innerHTML =
-        //   sources[i];
-        // document.getElementsByClassName("project-image").src = lid[i];
       }
 
       function getQuote_fn() {
-        // Create the arrays
-
-        // Initialize the arrays with quotes
         quotes[0] =
           "Rafi Car Care .Rafi Car Care, near svs kalynamandapam, Opposite HDFC Bank, Acharya Ranga Nagar, Benz Circle, Vijayawada, Andhra Pradesh 520010";
         sources[0] = "Rafi Car Care";
@@ -126,16 +104,10 @@
           "VGR Motor Works & Servicing Station, D.No. 5-81-21, Nilgiris Oppsite Road, Lakshmipuram Main Road, Pandaripuram 5th Lane, Guntur, Andhra Pradesh";
         sources[2] = "VGR Motor Works";
 
-        // Get a random index into the arrays
         i = Math.floor(Math.random() * quotes.length);
 
-        // Write out the quote as HTML
         document.write("<em>- " + sources[i] + "</em>");
 
-        // document.getElementById("content-data").innerHTML = quotes[i];
-        // document.getElementsByClassName("heading-projects").innerHTML =
-        //   sources[i];
-        // document.getElementsByClassName("project-image").src = lid[i];
       }
     </script>
 
@@ -356,33 +328,22 @@
       });
       
 
-
-      // More API functions here:
-      // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-
-      // the link to your model provided by Teachable Machine export panel
       const URL = "https://teachablemachine.withgoogle.com/models/XqH_4rByq/";
 
       let model, labelContainer, maxPredictions;
-
-      // Load the image model
       async function init() {
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
-
-        // load the model and metadata
         model = await tmImage.load(modelURL, metadataURL);
         maxPredictions = model.getTotalClasses();
 
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) {
-          // and class labels
           labelContainer.appendChild(document.createElement("div"));
         }
       }
 
       async function predict() {
-        // predict can take in an image, video or canvas html element
         var image = document.getElementById("imagePreview");
         const prediction = await model.predict(image, false);
         for (let i = 0; i < maxPredictions; i++) {
@@ -402,7 +363,6 @@
           var reader = new FileReader();
           reader.onload = function (e) {
             $("#imagePreview").attr("src", e.target.result);
-            // $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
             $("#imagePreview").hide();
             $("#imagePreview").fadeIn(650);
           };
